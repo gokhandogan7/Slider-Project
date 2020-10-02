@@ -89,3 +89,19 @@ rightButton.addEventListener("mouseleave", function(){
         showSlide(generatednum)
     },2000)
 })
+
+image.addEventListener("mouseover", function(){
+    image.className = "photo"
+    clearInterval(interval)
+})
+image.addEventListener("mouseleave", function(){
+    image.className = "photo"
+    interval = setInterval(function(){
+        var generatednum = Math.floor(Math.random()*lessons.length)
+        showSlide(generatednum)
+    },2000)
+})
+
+
+
+
