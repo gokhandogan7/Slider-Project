@@ -7,18 +7,18 @@ body{
 
 .img-pocket{
     border: 2px solid black;
-    width: 600px;
-    height: 400px;
+    width: 100vh;
+    height: auto;
 }
 .lesson-body{
     border: 1px solid black;
-    width: 600px;
+    width: 100vh;
     height: 100px;
 }
 
 img{
-    width: 600px;
-    height: 400px;
+    width: 100vh;
+    height: auto;
 }
 
 .btn{

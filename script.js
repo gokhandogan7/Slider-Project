@@ -65,3 +65,27 @@ function showSlide(index){
     link.setAttribute('href',lessons[index].link);
 
 }
+
+let interval = setInterval(function(){
+    var generatednum = Math.floor(Math.random()*lessons.length)
+    showSlide(generatednum)
+},1000)
+
+leftButton.addEventListener("mouseover", function(){
+    clearInterval(interval)
+})
+leftButton.addEventListener("mouseleave", function(){
+    interval = setInterval(function(){
+        var generatednum = Math.floor(Math.random()*lessons.length)
+        showSlide(generatednum)
+    },2000)
+})
+rightButton.addEventListener("mouseover", function(){
+    clearInterval(interval)
+})
+rightButton.addEventListener("mouseleave", function(){
+    interval = setInterval(function(){
+        var generatednum = Math.floor(Math.random()*lessons.length)
+        showSlide(generatednum)
+    },2000)
+})
