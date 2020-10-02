@@ -57,3 +57,11 @@ rightButton.addEventListener("click", function () {
   // }
   showSlide(index % lessons.length);
 });
+
+function showSlide(index){
+
+    image.setAttribute('src',lessons[index].image);
+    title.innerText = (lessons[index].name)
+    link.setAttribute('href',lessons[index].link);
+
+}
